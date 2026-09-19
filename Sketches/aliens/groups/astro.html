@@ -26,7 +26,23 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 @media(max-width:700px){.base-drawing .gallery-item img{height:340px}.gallery-item img{height:260px}}
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 <body>
 <div class="wrap" data-role="astro-consolidated-set">
 
@@ -113,7 +129,7 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
 </div>
 </section>
 
-<nav class="sequence-nav">
+<nav class="sequence-nav ron-bottom-prev-next-center">
 <a class="nav-pill" href="../alien-characters/../eye-of-the-beholder.html">&larr; Previous: Area 54 Oggle</a>
 <a class="nav-pill" href="../astro-lungs.html">Next: Astro Lungs &rarr;</a>
 </nav>
