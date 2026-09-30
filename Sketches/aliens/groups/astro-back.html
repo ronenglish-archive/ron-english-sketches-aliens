@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -45,6 +45,35 @@ nav.sequence-nav.ron-bottom-prev-next-center .sequence-spacer{
 }
 nav.sequence-nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
+}
+
+/* Ron catalogue: canonical Original Drawing hero sizing. */
+[data-role="original-drawing"] .original-grid{
+  display:flex !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+  align-items:center !important;
+  gap:18px !important;
+}
+[data-role="original-drawing"] .original-grid > .gallery-item{
+  display:block !important;
+  flex:0 0 auto !important;
+  width:100% !important;
+  max-width:900px !important;
+}
+[data-role="original-drawing"] .original-grid > .gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:440px !important;
+  object-fit:contain !important;
+}
+@media(max-width:700px){
+  [data-role="original-drawing"] .original-grid > .gallery-item{
+    max-width:320px !important;
+  }
+  [data-role="original-drawing"] .original-grid > .gallery-item img{
+    height:320px !important;
+  }
 }
 </style></head>
 <body>
