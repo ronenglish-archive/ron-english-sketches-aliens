@@ -1,76 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Garth Raider Alien | Ron English Catalogue Raisonn&eacute;</title>
+<!DOCTYPE html>
+<html lang="en"><head><style>/* Single authoritative PREVIEW-ONLY drawing stylesheet; no repository writes. */
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#fff;color:#111;zoom:1}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:13px;line-height:1.45}
+.wrap{width:calc(100% - 24px);max-width:590px;margin:0 auto;padding:14px 0 26px}.page-header{text-align:center;margin:0 0 14px}.page-title{font-size:26px;line-height:1.16;margin:0;font-weight:650}
+.nav-pills,.sequence-nav,.ron-bottom-prev-next-center{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:12px auto;text-align:center}
+.nav-pill,.sequence-pill{display:inline-block;text-align:center;padding:7px 10px;border:1px solid #111;border-radius:999px;background:#fff;color:#111;font-weight:700;font-size:11px;line-height:1.3;text-decoration:none}
+.nav-pill:hover,.sequence-pill:hover{background:#f3f4f6}.nav-pill:focus-visible,.sequence-pill:focus-visible,a:focus-visible{outline:2px solid #111;outline-offset:2px}.sequence-spacer{display:none}
+.original-drawing-heading{text-align:center;font-size:16px;margin:10px 0 9px}
+section.section-card,section.primary-artwork{width:100%;max-width:540px;margin:0 auto 14px;padding:12px;border:1px solid #e5e7eb;border-radius:15px;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.045)}
+section.section-card h2,section.primary-artwork h2{font-size:16px;text-align:center;margin:0 0 10px;line-height:1.3}
+.catalogue-meta-block{max-width:520px;margin:0 auto 13px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;font-size:12px;line-height:1.35;text-align:center}.work-meta li{margin:2px auto}
+.relationship-note{max-width:520px;text-align:center;margin:8px auto 14px;padding:9px 12px;font-size:12px;line-height:1.5;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px}
+.gallery-grid,.index-grid,.documentation-grid,.ancillary-gallery{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:10px}
+section[data-role='original-drawing'] .gallery-grid,section[data-role='original'] .gallery-grid,section.primary-artwork[data-role='original'] .gallery-grid{flex-direction:column;flex-wrap:nowrap;align-items:center;gap:10px}
+section[data-role='original-drawing'] .gallery-item,section[data-role='original'] .gallery-item,section.primary-artwork[data-role='original'] .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:100%;max-width:480px;padding:10px;margin:0 auto;border:1px solid #e5e7eb;border-radius:10px;background:#fff}
+section[data-role='original-drawing'] img,section[data-role='original'] img,section.primary-artwork[data-role='original'] img{display:block;width:auto;max-width:100%;height:auto;max-height:390px;object-fit:contain;margin:0 auto}
+/* Compact, square-ish matching documentary cards; two fit side by side in 540px panel. */
+section[data-role='digital'] .gallery-grid,section[data-role='literature'] .gallery-grid,section[data-role='cards'] .gallery-grid,section[data-role='ancillary-documentation'] .gallery-grid{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px}
+section[data-role='digital'] .gallery-item,section[data-role='literature'] .gallery-item,section[data-role='cards'] .gallery-item,section[data-role='ancillary-documentation'] .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 0 190px;width:190px;max-width:190px;min-width:0;min-height:176px;margin:0;padding:8px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit}
+section[data-role='digital'] .gallery-item img,section[data-role='literature'] .gallery-item img,section[data-role='cards'] .gallery-item img,section[data-role='ancillary-documentation'] .gallery-item img{display:block;width:auto;max-width:100%;height:auto;max-height:158px;object-fit:contain;margin:auto}
+section[data-role='literature'] .literature-entry{font-size:12px;line-height:1.4;text-align:center;max-width:480px;margin:0 auto 12px}
+section[data-role='literature'] .literature-entry p{margin:0 0 7px}
+section[data-role='notes'],.notes-text,.text-block{font-size:12px;text-align:center;line-height:1.45}section[data-role='notes'] p{margin:6px auto}
+.gallery-item img{object-fit:contain}a{color:inherit}footer{text-align:center;margin-top:16px;padding-top:10px;border-top:1px solid #d8d8d8;color:#6b7280;font-size:12px}
+@media(max-width:480px){.wrap{width:calc(100% - 18px)}section.section-card{padding:11px}.nav-pill{font-size:10px;padding:7px 8px}section[data-role='digital'] .gallery-item,section[data-role='literature'] .gallery-item{flex-basis:min(190px,100%);width:min(190px,100%);max-width:100%}}
+
+/* Preserve source-specific notes and documentary media within the approved compact layout. */
+.relationship-note,section[data-role="notes"]{margin:10px auto 16px;padding:12px 14px;max-width:540px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:11px;text-align:center;line-height:1.55}
+section[data-role="area54-cards"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:10px}
+section[data-role="area54-cards"] .gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;align-items:center;justify-content:center;min-height:176px;padding:8px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;text-decoration:none;overflow:hidden}
+section[data-role="area54-cards"] .gallery-item img{display:block;width:auto;max-width:100%;max-height:158px;height:auto;object-fit:contain;margin:auto}
+section[data-role="area-54-trading-card"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:10px}
+section[data-role="area-54-trading-card"] .gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;align-items:center;justify-content:center;min-height:176px;padding:8px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;text-decoration:none;overflow:hidden}
+section[data-role="area-54-trading-card"] .gallery-item img{display:block;width:auto;max-width:100%;max-height:158px;height:auto;object-fit:contain;margin:auto}
+section[data-role="delusionville-trading-cards"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:10px}
+section[data-role="delusionville-trading-cards"] .gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;align-items:center;justify-content:center;min-height:176px;padding:8px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;text-decoration:none;overflow:hidden}
+section[data-role="delusionville-trading-cards"] .gallery-item img{display:block;width:auto;max-width:100%;max-height:158px;height:auto;object-fit:contain;margin:auto}
+section[data-role="ancillary-documentation"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:10px}
+section[data-role="ancillary-documentation"] .gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;align-items:center;justify-content:center;min-height:176px;padding:8px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;text-decoration:none;overflow:hidden}
+section[data-role="ancillary-documentation"] .gallery-item img{display:block;width:auto;max-width:100%;max-height:158px;height:auto;object-fit:contain;margin:auto}
+</style><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Garth Raider Alien | Ron English Catalogue Raisonné</title>
 
 
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-clean-drawing-detail-a01">
-/* Ron English Sketches & Drawings: consolidated ordinary detail CSS. */
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:#111;font:14px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:center}
-a{color:inherit}
-.wrap{max-width:760px;width:100%;margin:0 auto;padding:18px 16px 38px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:12px auto 18px;text-align:center}
-.nav-pill,.sequence-pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #111;background:#111;color:#fff;border-radius:999px;padding:7px 13px;font-size:12.5px;line-height:1.3;font-weight:750;text-decoration:none;white-space:normal}
-.nav-pill:hover,.sequence-pill:hover,.nav-pill:focus-visible,.sequence-pill:focus-visible{background:#353535;border-color:#353535;color:#fff;outline-offset:3px}
-.sequence-spacer{display:none}
-.page-header{text-align:center;margin:8px auto 15px}
-.page-title{font-size:clamp(22px,3vw,26px);line-height:1.16;margin:0;font-weight:700}
-h2.original-drawing-heading{text-align:center;font-size:18px;line-height:1.35;margin:8px auto 12px}
-.section-card,section.primary-artwork[data-role="original"]{width:100%;max-width:720px;margin:0 auto 18px;padding:16px;border:1px solid #e0e4e9;border-radius:14px;background:#fff;box-shadow:0 3px 13px rgba(0,0,0,.045);text-align:center}
-.section-card h2{font-size:18px;line-height:1.3;margin:0 0 13px;text-align:center}
-.section-card p,.section-card li{line-height:1.55;text-align:center}
-.gallery-grid,.ron-doc-category-items{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:12px;margin:0 auto}
-.ron-doc-category-item{display:flex;flex-direction:column;align-items:center;justify-content:center;width:190px;max-width:100%;min-width:0;margin:0}
-.ron-doc-category-item>.gallery-item{width:100%;max-width:190px;flex:0 1 auto}
-.gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;min-width:0;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:inherit;border:1px solid #e1e5e9;border-radius:10px;background:#fff;overflow:hidden;margin:0}
-.gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:158px;object-fit:contain;margin:auto;padding:6px}
-.gallery-item figcaption,.gallery-item .caption{display:block;width:100%;font-size:12px;line-height:1.3;text-align:center;padding:7px 8px;overflow-wrap:anywhere}
-/* All original drawings retain their physical/source sequence and full image destinations. */
-section[data-role="original-drawing"] .gallery-grid.original-grid,
-section[data-role="original"] .gallery-grid.original-grid,
-section.primary-artwork[data-role="original"]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px}
-section[data-role="original-drawing"] .original-grid > .gallery-item,
-section[data-role="original"] .original-grid > .gallery-item,
-section.primary-artwork[data-role="original"] .primary-artwork-link{
- flex:0 1 auto;width:fit-content;max-width:100%;border:1px solid #e0e4e9;border-radius:9px;overflow:hidden;display:block;margin:0 auto;background:#fff;text-decoration:none}
-section[data-role="original-drawing"] .original-grid img,
-section[data-role="original"] .original-grid img,
-section.primary-artwork[data-role="original"] .primary-artwork-link img{
- display:block;width:auto;height:auto;max-width:min(100%,480px);max-height:min(650px,70vh);object-fit:contain;margin:0 auto;padding:10px}
-/* Use intrinsic orientation to apply distinct approved drawing width limits. */
-section[data-role="original-drawing"] .original-grid img.is-landscape-original,
-section[data-role="original"] .original-grid img.is-landscape-original,
-section.primary-artwork[data-role="original"] .primary-artwork-link img.is-landscape-original{
- max-width:min(100%,600px);max-height:min(650px,70vh)}
-.catalogue-meta-block{max-width:720px;width:100%;margin:0 auto 18px;text-align:center}
-.work-meta{padding:0;margin:0 auto;list-style:none;text-align:center;line-height:1.55}
-.work-meta li{margin:3px auto;text-align:center}
-.work-meta strong{font-weight:750}
-.relationship-note{max-width:700px;margin:0 auto 18px;padding:12px 18px;border:1px solid #cfd3da;border-radius:3px 17px 3px 17px;background:#f1f2f4;line-height:1.5;text-align:center}
-.relationship-note strong{font-weight:750}
-section[data-role="notes"],section[data-role="notes"] p,.literature-entry,.literature-entry p{text-align:center}
-.section-card [data-role="digital"]{text-align:center}
-footer{margin:24px auto 0;padding:17px 0;border-top:1px solid #e2e4e8;color:#777;font-size:12px;text-align:center}
-@media(max-width:560px){
- .wrap{padding:13px 10px 30px}.section-card,section.primary-artwork[data-role="original"]{padding:11px}
- .gallery-grid{gap:9px}.gallery-item{flex-basis:min(190px,44vw);width:min(190px,44vw)}
- .gallery-item img{max-height:150px}
- section[data-role="original-drawing"] .original-grid img,section[data-role="original"] .original-grid img,section.primary-artwork[data-role="original"] .primary-artwork-link img{max-width:100%;max-height:min(650px,70vh)}
- .nav-pill,.sequence-pill{padding:6px 10px;font-size:12px}
-}
-</style></head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="alien-characters/index.html">&larr; Alien Characters</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav><header class="page-header"><h1 class="page-title">Garth Raider Alien</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20original.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20original.jpg" alt="Original Drawing" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Garth Raider Alien</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> 14 &#215; 17 in.</li><li><strong>Work ID:</strong> RE-012183-V</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20B%26W.jpg" alt="Digitized Versions" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20color.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20color.jpg" alt="Digitized Versions" loading="lazy"></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Ron English, Ron English’s <em>Area 54 Alien Coloring Book: A Ron English Coloring Book</em> (San Francisco: Last Gasp, 2025). ISBN 978-0867199338.</p></div><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2026.jpg?v=1" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2026.jpg?v=1" alt="Garth Raider Alien literature" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="freakachu-alien.html">&larr; Previous: Freakachu Alien</a><a class="nav-pill sequence-pill" href="glove-alien.html">Next: Glove Alien &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div><script id="ron-original-orientation-a02">
-/* Classify only original artwork images; never alter source files or image links. */
-(function(){
- 'use strict';
- var selector='section[data-role="original-drawing"] .original-grid img,section[data-role="original"] .original-grid img,section.primary-artwork[data-role="original"] .primary-artwork-link img';
- function setOrientation(img){
-  if(!img.naturalWidth || !img.naturalHeight)return;
-  img.classList.toggle('is-landscape-original',img.naturalWidth>img.naturalHeight);
- }
- Array.prototype.forEach.call(document.querySelectorAll(selector),function(img){
-  if(img.complete)setOrientation(img);
-  img.addEventListener('load',function(){setOrientation(img);});
- });
-})();
-</script></body></html>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+</head><body><div class="wrap"><nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="alien-characters/index.html">← Alien Characters</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+</nav><header class="page-header"><h1 class="page-title">Garth Raider Alien</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20original.jpg" rel="noopener" target="_blank"><img alt="Original Drawing" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20original.jpg"/></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Garth Raider Alien</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> 14 × 17 in.</li><li><strong>Work ID:</strong> RE-012183-V</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20B%26W.jpg" rel="noopener" target="_blank"><img alt="Digitized Versions" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20B%26W.jpg"/></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20color.jpg" rel="noopener" target="_blank"><img alt="Digitized Versions" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Garth%20Raider%20Alien%20-%20color.jpg"/></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Ron English, Ron English’s <em>Area 54 Alien Coloring Book: A Ron English Coloring Book</em> (San Francisco: Last Gasp, 2025). ISBN 978-0867199338.</p></div><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2026.jpg?v=1" rel="noopener" target="_blank"><img alt="Garth Raider Alien literature" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2026.jpg?v=1"/></a></div></section><nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill" href="freakachu-alien.html">← Previous: Freakachu Alien</a><a class="nav-pill sequence-pill" href="glove-alien.html">Next: Glove Alien →</a></nav><footer>Published via GitHub Pages<br/>for long-term public access.</footer></div></body></html>
