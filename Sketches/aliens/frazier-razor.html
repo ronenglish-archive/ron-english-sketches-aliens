@@ -285,5 +285,193 @@ section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid
 }
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+<style id="ron-v7-media-review-pilot-v2">
+/* DOCUMENTARY MEDIA PILOT V2 — PREVIEW ONLY. Overrides competing legacy !important rules. */
+/* Do not target original drawing roles or main artwork frames. */
+html body section.section-card[data-role="digital"] > div.gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
+html body section.section-card[data-role="literature"] div.gallery-grid,
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
+  display:grid!important; width:100%!important; max-width:100%!important;
+  grid-template-columns:repeat(auto-fill, 206px)!important; justify-content:center!important;
+  justify-items:center!important; align-items:start!important; gap:12px!important;
+}
+/* Gallery-items must outrank earlier .gallery-item !important width and flex declarations. */
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {
+  display:block!important; box-sizing:border-box!important;
+  flex:none!important; width:206px!important; max-width:206px!important;
+  min-width:0!important; margin:0!important; align-self:start!important;
+}
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important; width:100%!important; max-width:100%!important;
+  height:190px!important; max-height:190px!important; object-fit:contain!important;
+}
+/* Literature: each entry stays an independent full-width citation group. */
+html body section.section-card[data-role="literature"] div.literature-entry {
+  display:block!important; box-sizing:border-box!important; width:100%!important;
+  max-width:100%!important; min-width:0!important; margin-left:auto!important; margin-right:auto!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid {
+  grid-template-columns:repeat(auto-fill, 148px)!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > p,
+html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
+  display:block!important; grid-column:1/-1!important; width:100%!important; max-width:100%!important;
+  text-align:center!important; margin:0 0 10px!important; flex:none!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="literature"] div.gallery-grid > figure {
+  display:block!important; box-sizing:border-box!important; flex:none!important;
+  width:148px!important; max-width:148px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid img,
+html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important; max-width:100%!important;
+  width:100%!important; height:170px!important; max-height:170px!important; object-fit:contain!important;
+}
+/* Literature legacy three-across has higher-specificity !important on direct entry grids. */
+html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;justify-content:center!important;gap:12px!important;}
+html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid > a.gallery-item {display:block!important;flex:none!important;width:148px!important;max-width:148px!important;min-width:0!important;}
+/* Preserve named coloring-book galleries, but override their old flex-only three-across rules. */
+html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;}
+html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across > a.gallery-item {flex:none!important;width:148px!important;max-width:148px!important;}
+/* Card families — don't change citations or unrelated image classes. */
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid {
+  grid-template-columns:repeat(auto-fill, 130px)!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item {
+  display:block!important; flex:none!important; box-sizing:border-box!important;
+  width:130px!important; max-width:130px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important;
+  width:100%!important; max-width:100%!important; height:170px!important; max-height:170px!important;
+  object-fit:contain!important;
+}
+/* Photos & documentation: compact, non-cropped, responsive. */
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
+  grid-template-columns:repeat(auto-fill, 158px)!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items > * {
+  flex:none!important; box-sizing:border-box!important; width:158px!important;
+  max-width:158px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid img,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid img,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items img,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid img,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items img {
+  display:block!important; box-sizing:border-box!important; width:100%!important;
+  max-width:100%!important; height:155px!important; max-height:155px!important; object-fit:contain!important;
+}
+/* On narrow phones, allow grids to shrink without horizontal clipping. */
+@media (max-width:500px){
+ html body section.section-card[data-role="digital"] > div.gallery-grid,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid {grid-template-columns:repeat(auto-fill,minmax(145px,1fr))!important;}
+ html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {width:100%!important;max-width:206px!important;}
+}
+
+/* V4 batch fix: flex wrapping centers EVERY ROW, including incomplete final rows.
+   This replaces V3 auto-fill grids. Source HTML and metadata remain untouched. */
+html body section.section-card[data-role="digital"] > div.gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
+html body section.section-card[data-role="literature"] div.gallery-grid,
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-designs"] div.gallery-grid,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-design"] div.gallery-grid {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+  align-content:flex-start!important;
+  gap:12px!important;
+  width:100%!important;
+  max-width:100%!important;
+}
+/* Prevent inherited grid and flex sizing from inflating individual documentary wrappers. */
+html body section.section-card[data-role="digital"] > div.gallery-grid > *,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
+  flex:0 0 206px!important; width:206px!important; max-width:206px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="literature"] div.gallery-grid > figure,
+html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item {
+  flex:0 0 148px!important; width:148px!important; max-width:148px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+/* The citation itself is a full-width row, not an image thumbnail. */
+html body section.section-card[data-role="literature"] div.gallery-grid > p,
+html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
+  flex:0 0 100%!important; width:100%!important; max-width:100%!important;
+  text-align:center!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > *,
+html body section.section-card[data-role="cards"] > div.gallery-grid > *,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > * {
+  flex:0 0 130px!important; width:130px!important; max-width:130px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > *,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > *,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items > * {
+  flex:0 0 158px!important; width:158px!important; max-width:158px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+/* Graphics/photo images stay within the compact wrapper without distortion. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img {
+  display:block!important; width:100%!important; max-width:100%!important;
+  height:155px!important; max-height:155px!important; object-fit:contain!important;
+  box-sizing:border-box!important;
+}
+/* Mobile: no forced card overflow; cards remain centered, including one-card rows. */
+@media(max-width:440px) {
+ html body section.section-card[data-role="digital"] > div.gallery-grid > *,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
+   flex:0 1 206px!important; width:min(100%,206px)!important; max-width:206px!important;
+ }
+}
+</style>
 </head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="area-54-heads/index.html">&larr; Alien Heads</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Frazier Razor</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20ORIGINAL.jpg" alt="Original Drawing" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Frazier Razor</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Unknown</li><li><strong>Work ID:</strong> RE-015641</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20B%26W.jpg" alt="Digitized Versions" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%203.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%203.jpg" alt="Digitized Versions" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%202.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%202.jpg" alt="Digitized Versions" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%201.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens%202/Frazier%20Razor%20-%20colorway%201.jpg" alt="Digitized Versions" loading="lazy"></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Ron English, Ron English’s <em>Area 54 Alien Coloring Book: A Ron English Coloring Book</em> (San Francisco: Last Gasp, 2025). ISBN 978-0867199338.</p></div><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2012.jpg?v=1" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/Aliens%20Coloring%20Book%20-%2012.jpg?v=1" alt="Frazier Razor literature" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill prev-work" href="flushal-recokon.html">&larr; Previous: Flushal Recokon</a> <a class="nav-pill sequence-pill next-work" href="fuelatron-jellybone.html">Next: Fuelatron Jellybone &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
