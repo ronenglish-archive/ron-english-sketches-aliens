@@ -1,5 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Walleyed Strabismus | Ron English Catalogue Raisonn&eacute;</title><style id="ron-digitized-consolidated-v1">
-
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Walleyed Strabismus | Ron English Catalogue Raisonn&eacute;</title><style>
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
@@ -33,9 +32,6 @@ footer a{color:inherit}
 .gallery-item,.index-card{flex-basis:min(100%,320px);max-width:320px}
 [data-role="original"] .gallery-item img{height:320px}
 }
-
-
-/* Source-centric fused-family landing presentation. */
 [data-role="original-drawing"] .original-grid{
   display:flex !important;
   flex-direction:column !important;
@@ -111,10 +107,7 @@ footer a{color:inherit}
     max-width:320px !important;
   }
 }
-
 .original-drawing-heading{text-align:center;margin:0 0 14px;font-size:1.4rem}
-
-/* Ordinary detail-page Original Drawing hero standard */
 section.primary-artwork[data-role="original"]{
   width:100%!important;
   max-width:920px!important;
@@ -143,7 +136,6 @@ section.primary-artwork[data-role="original"] .primary-artwork-link img{
   object-position:center center!important;
   margin:0!important;
 }
-
 section[data-role="original-drawing"] .gallery-grid.original-grid{
   display:flex!important;
   flex-direction:column!important;
@@ -167,8 +159,6 @@ section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-ite
   object-position:center center!important;
   margin:0!important;
 }
-
-/* Notes on individual detail pages are centered. */
 section[data-role="notes"]{
   text-align:center!important;
 }
@@ -178,7 +168,6 @@ section[data-role="notes"] p{
   margin-left:auto!important;
   margin-right:auto!important;
 }
-
 @media (max-width:700px){
   section.primary-artwork[data-role="original"]{
     max-width:920px!important;
@@ -189,9 +178,6 @@ section[data-role="notes"] p{
     height:300px!important;
   }
 }
-
-
-/* Adam Alien reference: uniform WHITE SECTION holders, not equal-size images. */
 section.section-card[data-role="original-drawing"],
 section.section-card[data-role="original"],
 section.section-card[data-role="digital"],
@@ -212,13 +198,10 @@ section.primary-artwork[data-role="original"] {
   background:#fff!important;
   box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
 }
-/* Original images remain prominent, with legacy original-view ordering retained. */
 section.section-card[data-role="original-drawing"] .gallery-item img,
 section.primary-artwork[data-role="original"] .primary-artwork-link img {
   object-fit:contain!important;
 }
-/* Secondary media images remain compact, not stretched to fill the holder. */
-
 section.section-card[data-role="literature"] .gallery-grid,
 section.section-card[data-role="ancillary-documentation"] .gallery-grid,
 section.section-card[data-role="ancillary"] .gallery-grid,
@@ -227,7 +210,6 @@ section.section-card[data-role*="trading-card"] .gallery-grid {
   display:flex!important;flex-wrap:wrap!important;
   justify-content:center!important;gap:18px!important;
 }
-
 section.section-card[data-role="literature"] .gallery-grid > .gallery-item,
 section.section-card[data-role="ancillary-documentation"] .gallery-grid > .gallery-item,
 section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item,
@@ -238,7 +220,6 @@ section.section-card[data-role*="trading-card"] .gallery-grid > .gallery-item {
   max-width:300px!important;min-width:0!important;
   margin-left:0!important;margin-right:0!important;
 }
-/* Each captioned ancillary item is its own compact image-over-text card. */
 section.section-card[data-role="ancillary-documentation"] .ancillary-gallery,
 section.section-card[data-role="ancillary-documentation"] .documentation-grid {
   display:flex!important;flex-wrap:wrap!important;
@@ -285,10 +266,6 @@ section.section-card[data-role="ancillary-documentation"] .ancillary-figure figc
     width:min(320px,100%)!important;max-width:100%!important;
   }
 }
-
-
-/* Area 54 card section holders align with the other 960px Sketches media panels. */
-/* Does not change the sizing or layout of individual collectible card images. */
 section.section-card[data-role="area54-cards"],
 section.section-card[data-role="area54-card"],
 section.section-card[data-role="area-54-cards"],
@@ -300,10 +277,6 @@ section.section-card[data-ron-area54-width="1"]{
   margin-left:auto!important;
   margin-right:auto!important;
 }
-
-
-/* Reference: RE-014003 (single) and RE-016582 (shared-sheet first, specific original second). */
-/* Holders stay white, centered and a maximum of 960px. */
 section.section-card[data-role="original-drawing"]{
   box-sizing:border-box!important;display:block!important;
   width:100%!important;max-width:960px!important;
@@ -334,11 +307,6 @@ section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid
   section.section-card[data-role="original-drawing"]{padding:14px!important;}
   section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item > img{height:300px!important;}
 }
-
-
-/* DOCUMENTARY MEDIA PILOT V2 — PREVIEW ONLY. Overrides competing legacy !important rules. */
-/* Do not target original drawing roles or main artwork frames. */
-
 html body section.section-card[data-role="literature"] div.gallery-grid,
 html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
 html body section.section-card[data-role="cards"] > div.gallery-grid,
@@ -352,10 +320,6 @@ html body section.ron-drawing-documentation-category[data-category="photo-galler
   grid-template-columns:repeat(auto-fill, 206px)!important; justify-content:center!important;
   justify-items:center!important; align-items:start!important; gap:12px!important;
 }
-/* Gallery-items must outrank earlier .gallery-item !important width and flex declarations. */
-
-
-/* Literature: each entry stays an independent full-width citation group. */
 html body section.section-card[data-role="literature"] div.literature-entry {
   display:block!important; box-sizing:border-box!important; width:100%!important;
   max-width:100%!important; min-width:0!important; margin-left:auto!important; margin-right:auto!important;
@@ -378,13 +342,10 @@ html body section.section-card[data-role="literature"] div.literature-entry > a.
   display:block!important; box-sizing:border-box!important; max-width:100%!important;
   width:100%!important; height:170px!important; max-height:170px!important; object-fit:contain!important;
 }
-/* Literature legacy three-across has higher-specificity !important on direct entry grids. */
 html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;justify-content:center!important;gap:12px!important;}
 html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid > a.gallery-item {display:block!important;flex:none!important;width:148px!important;max-width:148px!important;min-width:0!important;}
-/* Preserve named coloring-book galleries, but override their old flex-only three-across rules. */
 html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;}
 html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across > a.gallery-item {flex:none!important;width:148px!important;max-width:148px!important;}
-/* Card families — don't change citations or unrelated image classes. */
 html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
 html body section.section-card[data-role="cards"] > div.gallery-grid,
 html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid {
@@ -403,7 +364,6 @@ html body section.section-card[data-role="delusionville-trading-cards"] > div.ga
   width:100%!important; max-width:100%!important; height:170px!important; max-height:170px!important;
   object-fit:contain!important;
 }
-/* Photos & documentation: compact, non-cropped, responsive. */
 html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
 html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
 html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
@@ -427,12 +387,6 @@ html body section.ron-drawing-documentation-category[data-category="photo-galler
   display:block!important; box-sizing:border-box!important; width:100%!important;
   max-width:100%!important; height:155px!important; max-height:155px!important; object-fit:contain!important;
 }
-/* On narrow phones, allow grids to shrink without horizontal clipping. */
-
-
-/* V4 batch fix: flex wrapping centers EVERY ROW, including incomplete final rows.
-   This replaces V3 auto-fill grids. Source HTML and metadata remain untouched. */
-
 html body section.section-card[data-role="literature"] div.gallery-grid,
 html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
 html body section.section-card[data-role="cards"] > div.gallery-grid,
@@ -456,15 +410,12 @@ html body section.section-card[data-role="graphic-design"] div.gallery-grid {
   width:100%!important;
   max-width:100%!important;
 }
-/* Prevent inherited grid and flex sizing from inflating individual documentary wrappers. */
-
 html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
 html body section.section-card[data-role="literature"] div.gallery-grid > figure,
 html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item {
   flex:0 0 148px!important; width:148px!important; max-width:148px!important;
   min-width:0!important; margin:0!important; box-sizing:border-box!important;
 }
-/* The citation itself is a full-width row, not an image thumbnail. */
 html body section.section-card[data-role="literature"] div.gallery-grid > p,
 html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
   flex:0 0 100%!important; width:100%!important; max-width:100%!important;
@@ -486,7 +437,6 @@ html body section.section-card[data-role="graphic-design"] div.ron-doc-category-
   flex:0 0 158px!important; width:158px!important; max-width:158px!important;
   min-width:0!important; margin:0!important; box-sizing:border-box!important;
 }
-/* Graphics/photo images stay within the compact wrapper without distortion. */
 html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
 html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img,
 html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img {
@@ -494,13 +444,6 @@ html body section.section-card[data-role="graphic-design"] div.ron-doc-category-
   height:155px!important; max-height:155px!important; object-fit:contain!important;
   box-sizing:border-box!important;
 }
-/* Mobile: no forced card overflow; cards remain centered, including one-card rows. */
-
-
-
-/* Abe Waters reference: a centered compact detail-page shell with narrower panels.
-   This targets BOTH main.wrap and div.wrap as used in the 392 source pages.
-   V9 documentary image and card treatments remain unchanged. */
 html body main.wrap,
 html body div.wrap,
 html body main.container,
@@ -512,7 +455,6 @@ html body .detail-page-container {
   margin-left:auto!important;
   margin-right:auto!important;
 }
-/* Section width is measured including padding/borders; does not change media layout. */
 html body main.wrap > section.section-card,
 html body div.wrap > section.section-card,
 html body main.wrap > section.ron-drawing-documentation-category,
@@ -535,8 +477,6 @@ html body div.wrap > .primary-artwork {
   margin-left:auto!important;
   margin-right:auto!important;
 }
-/* No fixed pixel heights on section wrappers or artwork images. Preserve the
-   approved V9 per-section styles, flex centering and original aspect ratios. */
 @media (max-width:640px){
  html body main.wrap,html body div.wrap,html body main.container,
  html body .drawing-detail-page,html body .detail-page-container {
@@ -549,9 +489,6 @@ html body div.wrap > .primary-artwork {
    max-width:100%!important;
  }
 }
-
-
-/* Digitized Versions: approved 2026-11-08 sizing; one centered wrapping row system. */
 html body section.section-card[data-role="digital"] > .gallery-grid,
 html body section.section-card[data-role="digitized-versions"] > .gallery-grid {
   display: flex !important;
@@ -592,6 +529,27 @@ html body section.section-card[data-role="digitized-versions"] > .gallery-grid >
     max-width: 130px !important;
   }
 }
+
+/* Approved 2026-11-08 compact drawing detail presentation. */
+body {background:#fff !important;}
+.wrap,.wrapper {max-width:620px !important; width:100%; margin-left:auto !important;margin-right:auto !important; padding-left:12px !important;padding-right:12px !important;}
+.section-card,.section-block,.media-section,section.primary-artwork[data-role="original"] {box-sizing:border-box;max-width:560px !important;width:100% !important;margin-left:auto !important;margin-right:auto !important;background:#fff !important;}
+.catalogue-meta-block,.text-block,.relationship-note,.status-note {max-width:560px !important;}
+section[data-role="original-drawing"] .original-grid,section[data-role="original-drawing"] .gallery-grid,section.primary-artwork[data-role="original"] {display:flex !important;flex-direction:column !important;align-items:center !important;gap:12px !important;}
+section[data-role="original-drawing"] .gallery-item,section[data-role="original-drawing"] a:has(>img),section.primary-artwork[data-role="original"] .primary-artwork-link {box-sizing:border-box;flex:0 1 auto !important;width:100% !important;max-width:410px !important;margin-left:auto !important;margin-right:auto !important;background:#fff !important;}
+section[data-role="original-drawing"] .gallery-item img,section[data-role="original-drawing"] a:has(>img) > img,section.primary-artwork[data-role="original"] .primary-artwork-link img {display:block !important;width:100% !important;height:auto !important;max-height:380px !important;object-fit:contain !important;background:#fff !important;}
+section[data-role="digital"] .gallery-grid,section[data-role="digitized-versions"] .gallery-grid {display:flex !important;flex-flow:row wrap !important;justify-content:center !important;align-items:stretch !important;gap:12px !important;}
+section[data-role="digital"] .gallery-item,section[data-role="digitized-versions"] .gallery-item {box-sizing:border-box;display:block !important;flex:0 0 155px !important;width:155px !important;max-width:155px !important;min-width:0 !important;background:#fff !important;margin:0 !important;}
+section[data-role="digital"] .gallery-item img,section[data-role="digitized-versions"] .gallery-item img {display:block !important;box-sizing:border-box;width:100% !important;height:165px !important;max-height:165px !important;object-fit:contain !important;background:#fff !important;}
+section[data-role="area54-cards"] .gallery-grid,section[data-role="area-54-cards"] .gallery-grid,section[data-role="delusionville-trading-cards"] .gallery-grid,section[data-role="delusionville-cards"] .gallery-grid,section[data-role="cards"] .gallery-grid,section[data-role="graphic-designs"] .gallery-grid,section[data-role="work-in-progress"] .gallery-grid,section[data-role="photo-gallery"] .gallery-grid,section[data-role="artist-with-drawing"] .gallery-grid {display:flex !important;flex-flow:row wrap !important;justify-content:center !important;gap:12px !important;}
+section[data-role="area54-cards"] .gallery-item,section[data-role="area-54-cards"] .gallery-item,section[data-role="delusionville-trading-cards"] .gallery-item,section[data-role="delusionville-cards"] .gallery-item,section[data-role="cards"] .gallery-item,section[data-role="graphic-designs"] .gallery-item,section[data-role="work-in-progress"] .gallery-item,section[data-role="photo-gallery"] .gallery-item,section[data-role="artist-with-drawing"] .gallery-item {box-sizing:border-box;flex:0 0 130px !important;width:130px !important;max-width:130px !important;min-width:0 !important;background:#fff !important;margin:0 !important;}
+section[data-role="area54-cards"] .gallery-item img,section[data-role="area-54-cards"] .gallery-item img,section[data-role="delusionville-trading-cards"] .gallery-item img,section[data-role="delusionville-cards"] .gallery-item img,section[data-role="cards"] .gallery-item img,section[data-role="graphic-designs"] .gallery-item img,section[data-role="work-in-progress"] .gallery-item img,section[data-role="photo-gallery"] .gallery-item img,section[data-role="artist-with-drawing"] .gallery-item img {box-sizing:border-box;display:block !important;width:100% !important;height:170px !important;max-height:170px !important;object-fit:contain !important;background:#fff !important;}
+/* Legacy cascade has extra-specific original/card selectors; target real markup exactly. */
+html body section.section-card[data-role="original-drawing"] .gallery-grid.original-grid > a.gallery-item {display:block !important;flex:0 1 auto !important;width:100% !important;max-width:410px !important;min-width:0 !important;}
+html body section.section-card[data-role="original-drawing"] .gallery-grid.original-grid > a.gallery-item > img {display:block !important;width:100% !important;height:auto !important;max-height:380px !important;object-fit:contain !important;background:#fff !important;}
+html body section.section-card[data-role="area54-cards"] .gallery-grid > a.gallery-item,html body section.section-card[data-role="delusionville-trading-cards"] .gallery-grid > a.gallery-item,html body section.section-card[data-role="cards"] .gallery-grid > a.gallery-item {flex:0 0 130px !important;width:130px !important;max-width:130px !important;}
+html body section.section-card[data-role="area54-cards"] .gallery-grid > a.gallery-item img,html body section.section-card[data-role="delusionville-trading-cards"] .gallery-grid > a.gallery-item img,html body section.section-card[data-role="cards"] .gallery-grid > a.gallery-item img {width:100% !important;height:170px !important;max-height:170px !important;object-fit:contain !important;}
+@media(max-width:390px){section[data-role="digital"] .gallery-item,section[data-role="digitized-versions"] .gallery-item{flex-basis:130px !important;width:130px !important;max-width:130px !important;}}
 
 </style>
 
