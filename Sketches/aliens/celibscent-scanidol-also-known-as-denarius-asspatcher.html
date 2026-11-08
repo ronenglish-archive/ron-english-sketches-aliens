@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Celibscent Scanidol | Ron English Catalogue Raisonn&eacute;</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Celibscent Scanidol | Ron English Catalogue Raisonn&eacute;</title><style id="ron-digitized-consolidated-third20-v1">
+
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
@@ -32,7 +33,9 @@ footer a{color:inherit}
 .gallery-item,.index-card{flex-basis:min(100%,320px);max-width:320px}
 [data-role="original"] .gallery-item img{height:320px}
 }
-</style><style>.relationship-link{text-decoration:underline;text-underline-offset:2px;font-weight:600;color:inherit}
+
+
+.relationship-link{text-decoration:underline;text-underline-offset:2px;font-weight:600;color:inherit}
 /* Ron catalogue: canonical Original Drawing hero sizing. */
 [data-role="original-drawing"] .original-grid{
   display:flex !important;
@@ -61,7 +64,11 @@ footer a{color:inherit}
     height:320px !important;
   }
 }
-</style><style id="ron-original-drawing-heading-standard-v1">.original-drawing-heading{text-align:center;margin:0 0 14px;font-size:1.4rem}</style><style id="ron-detail-hero-notes-standard-v1">
+
+
+.original-drawing-heading{text-align:center;margin:0 0 14px;font-size:1.4rem}
+
+
 /* Ordinary detail-page Original Drawing hero standard */
 section.primary-artwork[data-role="original"]{
   width:100%!important;
@@ -137,8 +144,9 @@ section[data-role="notes"] p{
     height:300px!important;
   }
 }
-</style>
-<style id="ron-sketches-detail-media-sections-v2">
+
+
+
 /* Adam Alien reference: uniform WHITE SECTION holders, not equal-size images. */
 section.section-card[data-role="original-drawing"],
 section.section-card[data-role="original"],
@@ -233,8 +241,9 @@ section.section-card[data-role="ancillary-documentation"] .ancillary-figure figc
     width:min(320px,100%)!important;max-width:100%!important;
   }
 }
-</style>
-<style id="ron-notes-wip-panel-width-v1">
+
+
+
 /* Owner-approved Sketches & Drawings panel alignment: Notes and Work in Progress. */
 section.ron-unified-notes-wip-panel {
   box-sizing:border-box!important;
@@ -253,8 +262,9 @@ section.ron-unified-notes-wip-panel > h2 {text-align:center!important;}
 @media(max-width:600px) {
   section.ron-unified-notes-wip-panel {padding:14px!important;}
 }
-</style>
-<style id="ron-area54-card-panel-width-parity-v3-20261020">
+
+
+
 /* Area 54 card section holders align with the other 960px Sketches media panels. */
 /* Does not change the sizing or layout of individual collectible card images. */
 section.section-card[data-role="area54-cards"],
@@ -268,8 +278,9 @@ section.section-card[data-ron-area54-width="1"]{
   margin-left:auto!important;
   margin-right:auto!important;
 }
-</style>
-<style id="ron-original-image-panel-global-parity-20261026-v1">
+
+
+
 /* Reference: RE-014003 (single) and RE-016582 (shared-sheet first, specific original second). */
 /* Holders stay white, centered and a maximum of 960px. */
 section.section-card[data-role="original-drawing"]{
@@ -302,10 +313,9 @@ section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid
   section.section-card[data-role="original-drawing"]{padding:14px!important;}
   section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item > img{height:300px!important;}
 }
-</style>
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 
-<style id="ron-v7-media-review-pilot-v2">
+
+
 /* DOCUMENTARY MEDIA PILOT V2 — PREVIEW ONLY. Overrides competing legacy !important rules. */
 /* Do not target original drawing roles or main artwork frames. */
 html body section.section-card[data-role="digital"] > div.gallery-grid,
@@ -491,7 +501,57 @@ html body section.section-card[data-role="graphic-design"] div.ron-doc-category-
    flex:0 1 206px!important; width:min(100%,206px)!important; max-width:206px!important;
  }
 }
+
+
+/* November 8, 2026: owner-approved Digitized Versions sizing only. */
+html body section.section-card[data-role="digital"] > div.gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > .gallery-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  align-content: flex-start !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {
+  box-sizing: border-box !important;
+  display: block !important;
+  flex: 0 0 155px !important;
+  width: 155px !important;
+  max-width: 155px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item > img,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item > img {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 165px !important;
+  object-fit: contain !important;
+}
+@media(max-width:390px) {
+  html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+  html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {
+    flex: 0 1 130px !important;
+    width: min(100%,130px) !important;
+    max-width: 130px !important;
+  }
+}
 </style>
+
+
+
+
+<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+
 </head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="area-54-heads/index.html">&larr; Alien Heads</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Celibscent Scanidol</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Genhumas%20Transretnal%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Genhumas%20Transretnal%20ORIGINAL.jpg" alt="Original Drawing" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Celibscent Scanidol</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Unknown</li><li><strong>Work ID:</strong> RE-015734</li></ul></div>
 <div class="relationship-note"><strong>Derived from a fused original drawing.</strong> This work was created from one half of <a href="groups/genhumas-transretnal.html"><em>Genhumas Transretnal</em></a>.</div>
 <section class="section-card" data-role="digital"><h2>Digitized Version</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20B%26W.jpg" alt="Digitized Versions" loading="lazy"></a></div></section><section class="section-card" data-role="area54-cards"><h2>Area 54 Cards</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20card%20413%20one%20of%20one.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20card%20413%20one%20of%20one.jpg" alt="Area 54 card" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20card%20398%20one%20of%20one.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Celibscent%20Scanidol%20-%20card%20398%20one%20of%20one.jpg" alt="Area 54 card" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Denarius%20Asspatcher%20-%20card%20388%20one%20of%20one.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Denarius%20Asspatcher%20-%20card%20388%20one%20of%20one.jpg" alt="Area 54 card" loading="lazy"></a></div></section><section class="section-card ron-unified-notes-wip-panel"><h2>Notes</h2><div class="text-block"><p><strong>Also known as:</strong> Denarius Asspatcher.</p></div></section><section class="section-card" data-role="notes" style="max-width:960px;margin-left:auto;margin-right:auto;"><h2>Notes</h2><p class="notes-text">Sketch for the painting <a href="https://ronenglish-archive.github.io/ron-english-paintings-2020s/detail/paintings/2020s/2024/Pop-Iconography.html"><em>Pop Iconography</em></a>.</p></section><nav class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill prev-work" href="celestial-terrestial.html">&larr; Previous: Celestial Terrestial</a> <a class="nav-pill sequence-pill next-work" href="clegg-bleater.html">Next: Clegg Bleater &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>

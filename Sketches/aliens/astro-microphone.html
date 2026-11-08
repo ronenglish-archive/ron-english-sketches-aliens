@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Astro Microphone | Ron English Catalogue Raisonn&eacute;</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Astro Microphone | Ron English Catalogue Raisonn&eacute;</title><style id="ron-digitized-consolidated-v1">
+
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
@@ -17,8 +18,9 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,Seg
 .gallery-item img{display:block;width:100%;height:310px;object-fit:contain;background:#f3f4f6;padding:6px}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 footer a{color:inherit}
-@media(max-width:700px){.wrap{padding:22px 14px 48px}.gallery-item{flex-basis:min(100%,320px);max-width:320px}}
-</style><style id="ron-bottom-prev-next-center-v1">
+@media (max-width:700px){.wrap{padding:22px 14px 48px}.gallery-item{flex-basis:min(100%,320px);max-width:320px}}
+
+
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */
 nav.ron-bottom-prev-next-center{
   display:flex!important;
@@ -34,7 +36,8 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
-</style><style id="ron-catalogue-four-across-standard-v1">
+
+
 .index-grid,
 .gallery-grid,
 .category-grid,
@@ -67,7 +70,7 @@ nav.ron-bottom-prev-next-center > a{
   width:calc((100% - 54px) / 4)!important;
   max-width:calc((100% - 54px) / 4)!important;
 }
-@media(max-width:900px){
+@media (max-width:900px){
   .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
   .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
   .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
@@ -78,7 +81,7 @@ nav.ron-bottom-prev-next-center > a{
     max-width:calc((100% - 36px) / 3)!important;
   }
 }
-@media(max-width:680px){
+@media (max-width:680px){
   .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
   .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
   .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
@@ -89,7 +92,7 @@ nav.ron-bottom-prev-next-center > a{
     max-width:calc((100% - 18px) / 2)!important;
   }
 }
-@media(max-width:440px){
+@media (max-width:440px){
   .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
   .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
   .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
@@ -100,8 +103,8 @@ nav.ron-bottom-prev-next-center > a{
     max-width:100%!important;
   }
 }
-</style>
-<style id="ron-digitized-panel-width-global-exceptions-v1-20261026">
+
+
 /* Approved catalogue 960px centered Digitized Version outer panel. */
 section.section-card[data-role="digital"] {
   box-sizing:border-box!important;
@@ -116,10 +119,55 @@ section.section-card[data-role="digital"] {
   background:#fff!important;
   box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
 }
-@media(max-width:600px) {
+@media (max-width:600px) {
   section.section-card[data-role="digital"] { padding:14px!important; }
 }
+
+
+/* Digitized Versions: approved 2026-11-08 sizing; one centered wrapping row system. */
+html body section.section-card[data-role="digital"] > .gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > .gallery-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  align-content: flex-start !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+html body section.section-card[data-role="digital"] > .gallery-grid > .gallery-item,
+html body section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item {
+  box-sizing: border-box !important;
+  display: block !important;
+  flex: 0 0 155px !important;
+  width: 155px !important;
+  max-width: 155px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+html body section.section-card[data-role="digital"] > .gallery-grid > .gallery-item img,
+html body section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item img {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 165px !important;
+  object-fit: contain !important;
+}
+@media(max-width:390px) {
+  html body section.section-card[data-role="digital"] > .gallery-grid > .gallery-item,
+  html body section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item {
+    flex: 0 1 130px !important;
+    width: min(100%,130px) !important;
+    max-width: 130px !important;
+  }
+}
+
 </style>
+
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="groups/astro.html">&larr; Astro</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Astro Microphone</h1></header><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Astro Microphone</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20B%26W.jpg" alt="Astro Microphone digitized version" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20COLOR.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20COLOR.jpg" alt="Astro Microphone digitized version" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20colorway%202.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20colorway%202.jpg" alt="Astro Microphone digitized version" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20colorway%203.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/Astro%20Microphone%20colorway%203.jpg" alt="Astro Microphone digitized version" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill" href="astro-lungs.html">&larr; Previous: Astro Lungs</a><a class="nav-pill" href="astro-microphone-jetpack.html">Next: Astro Microphone Jetpack &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
